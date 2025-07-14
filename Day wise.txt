@@ -1,0 +1,161 @@
+Two Sum
+Problem Statement:
+Given a list of item prices, find indices of two items whose combined price equals a customer's gift card value.
+Sample Input:
+nums = [2, 7, 11, 15], target = 9
+Expected Output:
+[0, 1]
+Explanation: The items at index 0 and 1 add up to 9 (2 + 7 = 9).
+
+{
+        "expertId":123,
+        "ctc":4,
+        "role":"developer"
+    },
+    {
+        "expertId":456,
+        "ctc":9,
+        "role":"project manager"
+    },
+    {
+        "expertId":765,
+        "ctc":6,
+        "role":"devops engineer"
+    },
+    {
+        "expertId":912,
+        "ctc":5,
+        "role":"system design engineer"
+    },
+    {
+        "expertId":123,
+        "ctc":3,
+        "role":"sdet"
+    }
+
+test cases:
+
+target: 10
+[developer, devops engineer]
+
+target: 11
+[devops engineer, system design engineer]
+
+
+
+Maximum Subarray (Kadane’s Algorithm)
+Problem Statement:
+Find the contiguous period of maximum net income from daily financial logs.
+Sample Input:
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+Expected Output:
+6
+Explanation: Subarray [4, -1, 2, 1] yields the highest sum.
+
+
+
+
+Move Zeroes
+Problem Statement:
+Rearrange a delivery queue where zeros indicate unavailable trucks; push them to the end without disrupting the rest.
+
+	Sample Input:
+	nums = [0, 1, 0, 3, 12]
+	Expected Output:
+	[1, 3, 12, 0, 0]
+
+	Input:
+	20,0,19,5,0,3,10,0,2
+	Output:
+	20,19,5,3,10,2,0,0,0
+
+	Input:
+	3,0,0,1,0,5,0,6,0
+	Output:
+	3,1,5,6,0,0,0,0,0
+
+
+Best Time to Buy and Sell Stock
+Problem Statement:
+Identify the best day to buy and the best day to sell for highest profit from historical stock prices.
+Sample Input:
+	prices = [7, 1, 5, 3, 6, 4]
+	Buy at 1 and sell at 6.
+
+	45, 12, 3, 10, 50
+	Best time to buy 3 best time to sell 50
+
+	-10, -5, -2, -1, 1
+	Best time to buy -10 best time to sell 1
+
+	90, 40, 20, 10, 4
+	Best time to buy 10 best time to sell 4
+
+
+
+
+	Find Pivot Index
+	Problem Statement:
+	Determine the index at which the workload to its left equals the workload to its right.
+	Sample Input:
+	nums = [1, 7, 3, 6, 5, 6]
+	Expected Output:
+	3
+	Explanation: 1 + 7 + 3 = 11, 5 + 6 = 11.
+	Input:
+	-7, 1, 5, 2, -4, 3, 0
+	Output:
+	3
+	Input:
+	0,-3,5,-4,-2,3,1,0
+	Output:
+	0
+
+
+
+
+		Insert Interval
+		Problem Statement:
+		Insert a new booking and merge overlapping intervals in an existing schedule.
+
+		Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
+		Output: [[1,5],[6,9]]
+
+		Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+		Output: [[1,2],[3,10],[12,16]]
+		Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+
+
+
+
+
+
+
+	Sort Colors (Dutch National Flag)
+	Problem Statement:
+		Assume that your are part of support team in IRCTC app where customers would raise issue and it will be considered priority ticket such as 0, 1 and 2. now today tickets are in the bucket and you need to arrange it by priority
+		Example:
+		Input:
+		2,0,0,1,0,2,0,1
+		Output:
+		0,0,0,0,1,1,2,2
+		Sample Input:
+		nums = [2, 0, 2, 1, 1, 0]
+		Expected Output:
+		[0, 0, 1, 1, 2, 2]
+
+
+
+
+
+
+
+
+Rotate Image
+Problem Statement:
+Design a tool that rotates an image represented as a 2D matrix by 90° clockwise — useful for layout and orientation tasks.
+Sample Input:
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+Expected Output:
+[[7,4,1], [8,5,2], [9,6,3]]
+Explanation: The matrix is rotated layer by layer.
