@@ -1,3 +1,4 @@
+Day1: Arrays
 Two Sum
 Problem Statement:
 Given a list of item prices, find indices of two items whose combined price equals a customer's gift card value.
@@ -147,15 +148,191 @@ Sample Input:
 
 
 
+Day 2: Arrays, String
+		1. In the super market end of each day finding the raised bills to customer with invoice number, now find the 		missing invoice of the day.
+		Example:
+		Input:
+		8,10,3,1,4,2,5
+		Output:
+		6
+		Input:
+		45,91,90,92,46
+		Output:
+		47
+		Input:
+		0,1,2,4,5,6,7
+		Output:
+		3
+
+2. Find and apply charges of 20 each extra debit more than 3 in last 10 transaction of your account which has credit and debit combination
+		Example:
+		Input:
+		900,1200,5600,120,450,670,100,10000,400,120
+		Output:
+		900,1200,5600,120,450,670,100,10000,400,96
+
+
+
+3. Given an array nums of positive integers of size N. Find all distinct digits present in nums.
+		Example 1:
+		Input: nums = [131, 11, 48]
+		Output: 1 3 4 8
+		Explanation: 1, 3, 4, and 8 are only distinct
+		digits that can be extracted from the numbers
+		of the array.
+		Example 2:
+		Input: nums = [111, 222, 333, 4444, 666]
+		Output: 1 2 3 4 6
+		Explanation: 1, 2, 3, 4, and 6 are only distinct
+		digits that can be extracted from the numbers
+		of the array.
+
+
+4. Twisted prime
+Note: A number is called Twisted Prime if it is a prime and its reverse is also a prime.
+Example 1:
+Input: N = 97
+Output: 1
+Explanation: 97 is a prime number. Its 
+reverse 79 is also a prime number. Thus 
+97 is a  twisted Prime and so, the answer is 1.
+Example 2:
+Input: N = 43
+Output: 0
+Explanation: 43 is a prime number but its 
+reverse 34 is not a prime.So, 43 is not a 
+twisted prime and thus, answer is 0.
+
+Find the least prime number within the boundary that can be added with first array element that makes them divisible by second array elements at respective index
+		Input:
+		int[] arr1 = {3, 5, 7};
+		int[] arr2 = {10, 15, 20};
+		Output:
+		7 -1 13 
+		Input:
+		int[] arr1 = {4, 6, 8};
+		int[] arr2 = {5, 10, 15};
+		Output:
+		-1 -1 -1
 
 
 
 
-Rotate Image
+Strings:
+Given two strings A and B, find if A is a subsequence of B.
+Example 1:
+Input:
+A = TCS
+B = Tata Service
+Output: 0
+Explanation: A is not a subsequence of B
+as 'C' appears after 'S'
+
+Example 2:
+Input:
+A = infy
+B = infosys
+Output: 1
+Explanation: A is a subsequence of B.
+
+Example 3:
+Input:
+A = cts
+B = cognizant technology
+Output: 0
+Explanation: A is not a subsequence of B.
+
+
+
+Minimum Moves to Convert String
+You are given a string s consisting of n characters which are either 'X' or 'O'.
+A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
+Return the minimum number of moves required so that all the characters of s are converted to 'O'.
+Example 1:
+Input: s = "XXX"
+Output: 1	
+Explanation: XXX -> OOO
+We select all the 3 characters and convert them in one move.
+Example 2:
+Input: s = "XXOX"
+Output: 2
+Explanation: XXOX -> OOOX -> OOOO
+We select the first 3 characters in the first move, and convert them to 'O'.
+Then we select the last 3 characters and convert them so that the final string contains all 'O's.
+Example 3:
+Input: s = "OOOO"
+Output: 0
+Explanation: There are no 'X's in s to convert.
+
+
+
+Consider that you are building console interface of customer's loan application where customer used to provide name, pan, aadhaar, email then they will set the password for their account. your role is to validate those information's using regex.
+Example:
+Input:
+Name: "Raz",
+Password: "razak$123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Account created
+
+Example:
+Input:
+Name: "Ra",
+Password: "razak$123",
+Aadhaar: "7654567",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Invalid name,invalid aadhaar
+
+Example:
+Input:
+Name: "Raz",
+Password: "razak123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.c"
+
+Output:
+Invalid password, invalid email
+
+
+
+
+Validating IPV4
+Input: s = "222.111.111.111"
+Output: true
+Explanation: Here, the IPv4 address is as per the criteria mentioned and also all four decimal numbers lies in the mentioned range.
+Input: s = "5555..555"
+Output: false
+Explanation: "5555..555" is not a valid. IPv4 address, as the middle two portions are missing.
+Input: s = "0.0.0.0255"
+Output: false
+
+
+
+implement vs code ctrl + d find number of matches and replace like the same
+
+
+Rabin-Karp Algorithm
 Problem Statement:
-Design a tool that rotates an image represented as a 2D matrix by 90° clockwise — useful for layout and orientation tasks.
+Quickly scan large documents to locate a plagiarism match or keyword occurrence using rolling hash — perfect for search engines and text indexing.
 Sample Input:
-matrix = [[1,2,3], [4,5,6], [7,8,9]]
+text = "ABABDABACDABABCABCABCABCABC", pattern = "ABABCABCABCABC"
 Expected Output:
-[[7,4,1], [8,5,2], [9,6,3]]
-Explanation: The matrix is rotated layer by layer.
+15
+Explanation: Pattern found starting at index 15.
+
+
+Integer to Roman
+Problem Statement:
+Format modern values into Roman numeral form for certificate generation or themed branding (e.g. "Version IV").
+Sample Input:
+num = 1994
+Expected Output:
+"MCMXCIV"
+
