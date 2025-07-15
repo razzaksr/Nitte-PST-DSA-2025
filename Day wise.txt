@@ -218,29 +218,27 @@ Find the least prime number within the boundary that can be added with first arr
 
 
 
-Strings:
-Given two strings A and B, find if A is a subsequence of B.
-Example 1:
-Input:
-A = TCS
-B = Tata Service
-Output: 0
-Explanation: A is not a subsequence of B
-as 'C' appears after 'S'
-
-Example 2:
-Input:
-A = infy
-B = infosys
-Output: 1
-Explanation: A is a subsequence of B.
-
-Example 3:
-Input:
-A = cts
-B = cognizant technology
-Output: 0
-Explanation: A is not a subsequence of B.
+		Strings:
+		Given two strings A and B, find if A is a subsequence of B.
+		Example 1:
+		Input:
+		A = TCS
+		B = Tata Service
+		Output: 0
+		Explanation: A is not a subsequence of B
+		as 'C' appears after 'S'
+		Example 2:
+		Input:
+		A = infy
+		B = infosys
+		Output: 1
+		Explanation: A is a subsequence of B.
+		Example 3:
+		Input:
+		A = cts
+		B = cognizant technology
+		Output: 0
+		Explanation: A is not a subsequence of B.
 
 
 
@@ -248,20 +246,20 @@ Minimum Moves to Convert String
 You are given a string s consisting of n characters which are either 'X' or 'O'.
 A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
 Return the minimum number of moves required so that all the characters of s are converted to 'O'.
-Example 1:
-Input: s = "XXX"
-Output: 1	
-Explanation: XXX -> OOO
-We select all the 3 characters and convert them in one move.
-Example 2:
-Input: s = "XXOX"
-Output: 2
-Explanation: XXOX -> OOOX -> OOOO
+		Example 1:
+		Input: s = "XXX"
+		Output: 1	
+		Explanation: XXX -> OOO
+		We select all the 3 characters and convert them in one move.
+		Example 2:
+		Input: s = "XXOX"
+		Output: 2
+		Explanation: XXOX -> OOOX -> OOOO
 We select the first 3 characters in the first move, and convert them to 'O'.
 Then we select the last 3 characters and convert them so that the final string contains all 'O's.
-Example 3:
-Input: s = "OOOO"
-Output: 0
+		Example 3:
+		Input: s = "OOOO"
+		Output: 0
 Explanation: There are no 'X's in s to convert.
 
 
@@ -303,36 +301,23 @@ Invalid password, invalid email
 
 
 
-Validating IPV4
-Input: s = "222.111.111.111"
-Output: true
-Explanation: Here, the IPv4 address is as per the criteria mentioned and also all four decimal numbers lies in the mentioned range.
-Input: s = "5555..555"
-Output: false
-Explanation: "5555..555" is not a valid. IPv4 address, as the middle two portions are missing.
-Input: s = "0.0.0.0255"
-Output: false
+		Validating IPV4
+		Input: s = "222.111.111.111"
+		Output: true
+		Explanation: Here, the IPv4 address is as per the criteria mentioned and also 		all four decimal numbers lies in the mentioned range.
+		Input: s = "5555..555"
+		Output: false
+		Explanation: "5555..555" is not a valid. IPv4 address, as the middle two 			portions are missing.
+		Input: s = "0.0.0.0255"
+		Output: false
 
 
 
-implement vs code ctrl + d find number of matches and replace like the same
 
-
-Rabin-Karp Algorithm
-Problem Statement:
-Quickly scan large documents to locate a plagiarism match or keyword occurrence using rolling hash — perfect for search engines and text indexing.
-Sample Input:
-text = "ABABDABACDABABCABCABCABCABC", pattern = "ABABCABCABCABC"
-Expected Output:
-15
-Explanation: Pattern found starting at index 15.
-
-
-Integer to Roman
-Problem Statement:
-Format modern values into Roman numeral form for certificate generation or themed branding (e.g. "Version IV").
-Sample Input:
-num = 1994
-Expected Output:
-"MCMXCIV"
-
+		Group Anagrams
+		Problem Statement:
+		Cluster search queries or user aliases that are scrambled versions of each other — useful in NLP or 		search optimization.
+		Sample Input:
+		strs = ["eat","tea","tan","ate","nat","bat"]
+		Expected Output:
+		[["eat","tea","ate"], ["tan","nat"], ["bat"]]
