@@ -13,6 +13,7 @@ def findmaxsubarray():
     for num in nums[1:]:
         presum = max(num,presum+num)
         maxsum = max(presum,maxsum)
+    return maxsum
 ans=findmaxsubarray()
 print(ans)
             
