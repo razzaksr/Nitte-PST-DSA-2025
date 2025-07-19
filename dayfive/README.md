@@ -1,6 +1,6 @@
-## Day 5: 1d-DP , 2d-DP
+# Day 5: 1d-DP
 
-### Generate Parentheses  
+## Generate Parentheses  
 **Problem Statement:**  
 Design a code formatter to wrap operations in valid parentheses — useful in compiler design and syntax generation.  
 
@@ -12,7 +12,7 @@ Output: `["((()))", "(()())", "(())()", "()(())", "()()()"]`
 
 ---
 
-### Quick Select  
+## Quick Select  
 **Problem Statement:**  
 Consider you are going to inquire about top kth package from placement history of past year companies offered. NOTE: using quick select  
 
@@ -30,7 +30,7 @@ Output: `7`
 
 ---
 
-### Climbing Stairs via DP  
+## Climbing Stairs via DP  
 
 **Examples:**  
 Input: `5`  
@@ -53,7 +53,7 @@ Output: `5040`
 
 ---
 
-### Coin Change via DP  
+## Coin Change via DP  
 
 **Examples:**  
 Input: `coins = [100, 500, 200]`, amount = `1100`  
@@ -69,7 +69,7 @@ Output: `3`
 
 ---
 
-### Jump Game  
+## Jump Game  dayfive
 You’re given an array nums of non-negative integers where each element nums[i] is the maximum jump length from index i. Determine whether it’s possible to reach the last index starting from index 0.  
 
 **Input Format:**  
@@ -89,7 +89,7 @@ Start at 0 → jump 2 → index 2 → jump 1 → index 3 → jump 1 → index 4.
 
 ---
 
-### Max SubSum Kaden's with DP  
+## Max SubSum Kaden's with DP  
 You are given an integer array nums. Find the contiguous subarray (at least one element) with the maximum possible sum.  
 
 **Input Format:**  
