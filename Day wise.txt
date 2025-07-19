@@ -564,6 +564,37 @@ Explanation:
 Maximum sum is from subarray [4, -1, 2, 1].
 
 
+Day 6:
+Decode ways:
+Given a string s containing digits only, return the total number of ways to decode it using the mapping: 'A' = 1 to 'Z' = 26. '0' cannot be decoded on its own.
+Input Format:
+- s: A string of digits (1 ≤ len(s) ≤ 100)
+Output Format:
+- An integer denoting the number of decoding ways.
+		Sample Input:
+		s = "226"
+		Sample Output:
+		3
+		Explanation:
+		Valid decodings: "BZ", "VF", "BBF".
 
+
+
+
+
+
+Grid Path Count MxN
+Imagine you're designing an autonomous robot for warehouse navigation. The warehouse floor is laid out in an m x n grid. The robot can only move right or down, starting from the top-left cell to the bottom-right. You need to calculate how many unique paths the robot can take to reach the destination.
+		Example
+		Input: 3 3
+		Output: 6
+		Input: 2 2
+		Output: 2
+		Input: 1 5
+		Output: 1
+		Input: 4 1
+		Output: 1
+		Input: 4 3
+		Output: 10
 
 
