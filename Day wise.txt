@@ -598,3 +598,92 @@ Imagine you're designing an autonomous robot for warehouse navigation. The wareh
 		Output: 10
 
 
+
+Day 7:
+Minimum Path Sum:
+Let’s say you’re optimizing cost-efficient delivery routes across a grid-like city. Each cell in the grid contains a cost to enter that area. Starting from the top-left, the goal is to reach the bottom-right with the minimum total cost, only moving right or down.
+		Example
+		Input: [[1,3,1],[1,5,1],[4,2,1]]
+		Output: 7
+		Input: [[1,2],[1,1]]
+		Output: 3
+		Input: [[5]]
+		Output: 5
+		Input: [[1,2,3],[4,5,6]]
+		Output: 12
+		Input: [[1,1,1],[1,1,1],[1,1,1]]
+		Output: 5
+
+
+Minimum Distance to calculate transfer one word to another 
+Imagine you are a software engineer working on a document editing application. The application allows users to edit and correct typos in their documents. One of the features you are developing is a tool to calculate the minimum number of operations required to transform one word into another. This feature is crucial for suggesting the most efficient edits and corrections to the users.
+Task: Given two words, implement a function that calculates the minimum number of operations required to convert the first word into the second word. The allowed operations are:
+Insert a character
+Delete a character
+Replace a character
+
+Input:
+Two strings word1 and word2 representing the original word and the target word, respectively.
+Output:
+An integer representing the minimum number of operations required to convert word1 into word2.
+
+		Example:
+		Input: word1 = "horse", word2 = "rose"
+		Output: 2
+		Explanation:
+		To transform "horse" into "rose", the following 2 operations are required:
+		  1. Replace 'h' with 'r' -> "rorse"
+		  2. Delete 'r' -> "rose"
+
+
+
+Bioinformatics - DNA Sequence Analysis
+    Problem: Find the Longest Common Subsequence (LCS) between two DNA sequences.
+    This helps in identifying genetic similarities, evolutionary relationships,
+    and mutations in genetic research.
+    Real-world application: Genetics, medical research, evolutionary biology
+		Example:
+		Input: text1 = abcde, text2 = ace
+		Ouput: 3
+		Input: text1 = abc, text2 = def
+		Ouput: 0
+		Input: text1 = aggtab, text2 = gxtxayb
+		Ouput: 4
+		Input: text1 = aaaa, text2 = aa
+		Ouput: 2
+		Input: text1 = abcdef, text2 = acf
+		Ouput: 3
+
+
+
+Corporate Resource Allocation
+    Problem: A company has a limited budget and needs to select projects 
+    that maximize profit. Each project has a cost and expected profit.
+    This is a classic 0/1 Knapsack problem applied to business scenarios.
+    Real-world application: Project management, investment decisions, resource allocation
+
+		Example:
+		Input 1        
+		weights: [1,2,3]   values: [10,15,40]  capacity: 5
+		Output1: 55
+		Input 2
+	        weights: [1,3,4,5]  values: [10,40,50,70]  capacity: 8
+		Output: 110
+		Input 3
+	        weights: [1,2,3,2]  values: [10,20,30,40]  capacity: 5
+		Output: 70
+
+
+
+Cryptocurrency Trading Strategy
+    Problem: Find all palindromic subsequences in price patterns to identify 
+    potential trading opportunities. Palindromic patterns often indicate 
+    market reversals or consolidation phases.
+    Real-world application: Algorithmic trading, pattern recognition, financial analysis
+		Example:
+		Input: HLHLHHL
+		Ouput: 5
+		Input: HHLLHH
+		Ouput: 6
+		Input: HHHLL
+		Ouput: 3
