@@ -1,7 +1,7 @@
 Day1: Arrays
 Two Sum
 Problem Statement:
-Given a list of item prices, find indices of two items whose combined price equals a customer's gift card value.
+Given a list of item prices, find indices of two items whose combined price equals a customer's gift biked value.
 Sample Input:
 nums = [2, 7, 11, 15], target = 9
 Expected Output:
@@ -687,3 +687,125 @@ Cryptocurrency Trading Strategy
 		Ouput: 6
 		Input: HHHLL
 		Ouput: 3
+
+Day 8:
+1. Daily Temperatures
+Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
+		Example 1:
+		Input: temperatures = [73,74,75,71,69,72,76,73]
+		Output: [1,1,4,2,1,1,0,0]
+		Example 2:
+		Input: temperatures = [30,40,50,60]
+		Output: [1,1,1,0]
+		Example 3:
+		Input: temperatures = [30,60,90]
+		Output: [1,1,0]
+
+
+2. Bike Fleet
+There are n bikes at given miles away from the starting mile 0, traveling to reach the mile target.
+You are given two integer array position and speed, both of length n, where position[i] is the starting mile of the ith bike and speed[i] is the speed of the ith bike in miles per hour.
+A bike cannot pass another bike, but it can catch up and then travel next to it at the speed of the slower bike.
+A bike fleet is a bike or bikes driving next to each other. The speed of the bike fleet is the minimum speed of any bike in the fleet.
+If a bike catches up to a bike fleet at the mile target, it will still be considered as part of the bike fleet.
+Return the number of bike fleets that will arrive at the destination.
+
+A bike fleet is a group of bikes that travel together (a slower bike in front causes a faster bike behind to merge into a fleet).
+
+Example 1:
+Input: target = 12, position = [10,8,0,5,3], speed = [2,4,1,1,3]
+Output: 3
+Explanation:
+The bikes starting at 10 (speed 2) and 8 (speed 4) become a fleet, meeting each other at 12. The fleet forms at target.
+The bike starting at 0 (speed 1) does not catch up to any other bike, so it is a fleet by itself.
+The bikes starting at 5 (speed 1) and 3 (speed 3) become a fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches target.
+
+Example 2:
+Input: target = 10, position = [3], speed = [3]
+Output: 1
+Explanation:
+There is only one bike, hence there is only one fleet.
+
+Example 3:
+Input: target = 100, position = [0,2,4], speed = [4,2,1]
+Output: 1
+Explanation:
+The bikes starting at 0 (speed 4) and 2 (speed 2) become a fleet, meeting each other at 4. The bike starting at 4 (speed 1) travels to 5.
+Then, the fleet at 4 (speed 2) and the bike at position 5 (speed 1) become one fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches target.
+
+
+3. Largest Rectangle in Histogram, Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
+
+Example 1:
+Input: heights = [2,1,5,6,2,3]
+Output: 10
+Explanation: The above is a histogram where width of each bar is 1.
+The largest rectangle is shown in the red area, which has an area = 10 units.
+
+Example 2:
+Input: heights = [2,4]
+Output: 4
+
+
+4. Valid Parentheses
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+Constraints:
+s consists of parentheses only '()[]{}'.
+
+Example 1:
+Input: s = "()"
+Output: true
+
+Example 2:
+Input: s = "()[]{}"
+Output: true
+
+Example 3:
+Input: s = "(]"
+Output: false
+
+Example 4:
+Input: s = "([])"
+Output: true
+
+Example 5:
+Input: s = "([)]"
+Output: false
+
+5. Evaluate Reverse Polish Notation
+You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
+Evaluate the expression. Return an integer that represents the value of the expression.
+Note that:
+The valid operators are '+', '-', '*', and '/'.
+Each operand may be an integer or another expression.
+The division between two integers always truncates toward zero.
+There will not be any division by zero.
+The input represents a valid arithmetic expression in a reverse polish notation.
+The answer and all the intermediate calculations can be represented in a 32-bit integer.
+ 
+Example 1:
+Input: tokens = ["2","1","+","3","*"]
+Output: 9
+Explanation: ((2 + 1) * 3) = 9
+
+Example 2:
+Input: tokens = ["4","13","5","/","+"]
+Output: 6
+Explanation: (4 + (13 / 5)) = 6
+
+Example 3:
+Input: tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
+Output: 22
+Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
+= ((10 * (6 / (12 * -11))) + 17) + 5
+= ((10 * (6 / -132)) + 17) + 5
+= ((10 * 0) + 17) + 5
+= (0 + 17) + 5
+= 17 + 5
+= 22
