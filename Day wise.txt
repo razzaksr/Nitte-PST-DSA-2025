@@ -564,7 +564,7 @@ Explanation:
 Maximum sum is from subarray [4, -1, 2, 1].
 
 
-Day 6:
+Day 6:(Half Day)
 Decode ways:
 Given a string s containing digits only, return the total number of ways to decode it using the mapping: 'A' = 1 to 'Z' = 26. '0' cannot be decoded on its own.
 Input Format:
@@ -1282,3 +1282,35 @@ key consists of lowercase English letters.
 It is guaranteed that for each call to dec, key is existing in the data structure.
 At most 5 * 104 calls will be made to inc, dec, getMaxKey, and getMinKey.
 
+
+Day 12: (Half Day)
+Fixed Sliding window
+1. reverse within given window
+2. find sub sum within given window
+Variable Sliding window
+singly linked list creation and find followings
+
+3. Merge k Sorted Lists
+
+You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
+Merge all the linked-lists into one sorted linked-list and return it.
+
+Example 1:
+Input: lists = [[1,4,5],[1,3,4],[2,6]]
+Output: [1,1,2,3,4,4,5,6]
+Explanation: The linked-lists are:
+[  
+	1->4->5,
+	1->3->4,
+	2->6
+]
+merging them into one sorted list:
+1->1->2->3->4->4->5->6
+
+Example 2:
+Input: lists = []
+Output: []
+
+Example 3:
+Input: lists = [[]]
+Output: []
